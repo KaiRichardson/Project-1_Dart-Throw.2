@@ -77,7 +77,7 @@ function cityInfo() {
     }
 }
 
-randCity()
+$(".scrollBtn").click(randCity);
 
 function randCity() {
 
