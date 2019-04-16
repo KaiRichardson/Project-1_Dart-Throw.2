@@ -58,7 +58,6 @@ function cityInfo() {
 
     for (let i = 0; i < cityArr.length; i++) {
 
-        // var wikiQueryURL = "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exchars=" + chars + "&explaintext=&titles=" + cName + "&format=json";
         var wikiQueryURL = "https://en.wikipedia.org/api/rest_v1/page/summary/" + cityArr[i].city;
 
         $.ajax({
@@ -154,9 +153,6 @@ function gotToSkyscanner(lat, lng) {
     }).then(function (response) {
 
         console.log(response);
-
-
-        var destination;
 
         window.open("https://www.skyscanner.com/transport/flights/" + + "/" + + "/" + + "/" + + "/" + + "/");
 
